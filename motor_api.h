@@ -29,7 +29,7 @@ private:
     uint16_t repetitions_;
     uint8_t last_time_;
 
-    uint16_t periods_[6] = {100, 50, 20, 10, 5, 2};
+    uint16_t periods_[6] = {50, 20, 15, 10, 5, 2};
 
 
     bool running_ = false;
@@ -94,7 +94,11 @@ public:
         half_period_ = periods_[vel - 1];
         repetitions_ = repetitions;
         pause_time_ = pause;
+        digitalWrite(dir_pin_, dir_);
+
         digitalWrite(enable_pin_, 0);
+        delay(5);
+
         running_ = true;
     }
 
@@ -110,7 +114,9 @@ public:
 
         repetitions_ = repetitions;
         pause_time_ = pause;
+        digitalWrite(dir_pin_, dir_);
         digitalWrite(enable_pin_, 0);
+        delay(5);
         running_ = true;
 
     }
@@ -127,7 +133,9 @@ public:
 
         repetitions_ = repetitions;
         pause_time_ = pause;
+        digitalWrite(dir_pin_, dir_);
         digitalWrite(enable_pin_, 0);
+        delay(5);
         running_ = true;
 
     }
