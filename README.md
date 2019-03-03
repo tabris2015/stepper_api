@@ -17,7 +17,7 @@ El control se realiza mediante un comando separado por comas que tiene la siguie
     * Tiempo: el numero de milisegundos que el motor va a girar (ejemplo: 3000 para que gire 3 segundos continuos).
     * Pasos: el numero de pasos que el motor gira (ejemplo, 40 pasos).
   - **REPETICIONES**: el numero de veces que se repetira el comando.
-  - **PAUSA**: el tiempo de espera entre repeticiones.
+  - **PAUSA**: el tiempo de espera entre repeticiones en milisegundos.
 
 ## Ejemplos
 
